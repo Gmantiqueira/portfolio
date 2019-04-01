@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Saira";
+  src: url("../fonts/Saira-Regular.eot");
+  src: url("../fonts/Saira-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url("../fonts/Saira-Bold.eot");
+  src: url("../fonts/Saira-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+ul,
+li {
+  color: var(--dark-main);
+  font-family: "Saira";
+  margin: 0;
+}
+
+html {
+  font-family: "Saira";
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.white {
+  color: var(--font-main);
+}
+
+.gray {
+  color: var(--lighter-main);
+}
+
+.dark {
+  color: var(--dark-main);
+}
+
+.black {
+  color: var(--black);
+}
+
+.spaced {
+  letter-spacing: 0.1em;
+}
+
+h1,
+.h1 {
+  font-size: var(--h1);
+  @media screen and (max-width: 992px) {
+    font-size: var(--h2);
+  }
+}
+
+h2,
+.h2 {
+  font-size: var(--h2);
+  @media screen and (max-width: 992px) {
+    font-size: var(--h3);
+  }
+}
+
+h3,
+.h3 {
+  font-size: var(--h3);
+  @media screen and (max-width: 992px) {
+    font-size: var(--h4);
+  }
+}
+
+h4,
+.h4 {
+  font-size: var(--h4);
+}
+
+h5,
+.h5 {
+  font-size: var(--h5);
+}
+
+p,
+.p1 {
+  font-size: var(--p1);
+}
+
+.p2 {
+  font-size: var(--p2);
+}

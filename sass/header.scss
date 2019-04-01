@@ -1,0 +1,25 @@
+header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 128px;
+  padding: 0 32px;
+  width: 100%;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    transition: all 0.3s ease;
+
+    a {
+      display: block;
+      margin-left: 48px;
+      transition: 0.3s all ease;
+      min-width: 36px;
+      z-index: 2;
+    }
+  }
+}
