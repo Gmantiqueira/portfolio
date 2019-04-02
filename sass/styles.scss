@@ -4,7 +4,35 @@
 @import "header";
 
 section#home {
+  display: flex;
+  flex-wrap: wrap;
   padding: 128px 0;
+  h2 {
+    margin-bottom: 48px;
+  }
+
+  h5 {
+    margin-bottom: 48px;
+    line-height: 33px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    img {
+      margin-left: 16px;
+    }
+  }
+
+  .intro {
+    width: 50%;
+  }
+
+  .img-wrapper {
+    width: 50%;
+  }
 }
 
 section#projeto {
@@ -17,8 +45,9 @@ section#projeto {
     }
     .img-wrapper {
       padding: 7% 13%;
+      margin-left: -10%;
       position: relative;
-      width: 100%;
+      width: 110%;
       z-index: 1;
       .inner-image {
         background-repeat: no-repeat;
@@ -56,21 +85,27 @@ section#projeto {
   }
 
   &:nth-of-type(odd) {
+    .img-wrapper {
+      margin-left: 0;
+      margin-right: -10%;
+    }
     img {
       left: 0;
+      right: auto;
     }
   }
 
   .techs {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     div {
       align-items: center;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      margin-right: 64px;
+      margin-bottom: 24px;
+      margin-right: 56px;
       * {
         display: block;
       }
