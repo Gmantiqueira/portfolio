@@ -14,7 +14,6 @@ const scripts = [
 ];
 
 const styles = [
-  "node_modules/font-awesome/css/font-awesome.css",
   "node_modules/bootstrap/dist/css/bootstrap-grid.css",
   "css/style.css"
 ];

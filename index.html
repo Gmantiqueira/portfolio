@@ -4,35 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Front-end Gabu</title>
+    <title>Portfolio</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css"
-      integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css"
-      integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="flex container">
+    <header class="container">
       <a class="p1" href="#intro">Gabriel Antiqueira</a>
 
-      <nav class="menu flex">
+      <nav class="menu">
         <a class="p1 dark" href="/">Home</a>
-        <a class="p1 dark" href="#skills">Sobre mim</a>
-        <a class="p1 dark" href="#about">Currículo</a>
+        <a class="p1 dark" href="#projetos">Projetos</a>
+        <a class="p1 dark" href="/resume">Currículo</a>
       </nav>
     </header>
 
     <section id="home">
       <div class="container">
-        <div class="row">
+        <div
+          class="row flex-column-reverse flex-lg-row justify-content-between"
+        >
           <div class="intro">
             <h2 class="black bold">
               Sou um estudante de tecnologia a procura de desafios para evoluir.
@@ -44,21 +40,25 @@
               interfaces, aplicações e softwares.
             </h5>
 
-            <a class="black bold" href="/resume"
-              >Mais sobre mim <img src="img/arrow-right.png"
-            /></a>
+            <a href="/resume">
+              <div>
+                <p class="black bold">Mais sobre mim</p>
+                <img src="img/arrow-right.png" />
+              </div>
+            </a>
           </div>
 
           <div class="img-wrapper">
             <div class="img">
-              <img src="" />
+              <img src="img/photo.jpg" />
+              <div class="dotted"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projeto">
+    <section id="projetos" class="projeto">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-lg-6">
@@ -83,26 +83,31 @@
               </div>
 
               <div>
-                <i class="fab fa-sass h4"></i>
+                <img class="icons" src="img/styled.png" />
                 <h5 class="black bold">Styled-components</h5>
               </div>
 
               <div>
-                <i class="fab fa-bootstrap h4"></i>
+                <img class="icons" src="img/redux.png" />
                 <h5 class="black bold">Redux</h5>
               </div>
             </div>
 
-            <div class="link">
-              <p class="spaced black bold">ACESSAR O SITE</p>
-              <i class="fas fa-external-link-alt"></i>
-            </div>
+            <a
+              target="_blank"
+              href="https://github.com/Gmantiqueira/modulo4-react"
+            >
+              <div class="link">
+                <p class="spaced black bold">ACESSAR O SITE</p>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projeto">
+    <section class="projeto">
       <div class="container">
         <div class="row flex-row-reverse">
           <div class="col-sm-12 col-lg-6">
@@ -139,26 +144,28 @@
               </div>
 
               <div>
-                <i class="fab fa-bootstrap h4"></i>
+                <i class="fab fa-js h4"></i>
                 <h5 class="black bold">Javascript</h5>
               </div>
 
               <div>
-                <i class="fab fa-bootstrap h4"></i>
+                <img class="icons" src="img/jquery.png" />
                 <h5 class="black bold">Jquery</h5>
               </div>
             </div>
 
-            <div class="link">
-              <p class="spaced black bold">ACESSAR O SITE</p>
-              <i class="fas fa-external-link-alt"></i>
-            </div>
+            <a target="_blank" href="http://viptecno.com.br/">
+              <div class="link">
+                <p class="spaced black bold">ACESSAR O SITE</p>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projeto">
+    <section class="projeto">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-lg-6">
@@ -173,10 +180,10 @@
 
           <div class="col-sm-12 offset-sm-0 col-lg-6">
             <p class="dark spaced">
-              <b>ESTÁGIO AGÊNCIA REVELARE</b> / SITE INSTITUCIONAL
+              <b>ESTÁGIO AGÊNCIA REVELARE</b> / LANDING PAGE
             </p>
 
-            <h3 class="black bold">Finch Soluções - Site Institucional</h3>
+            <h3 class="black bold">Picplace - Landing Page</h3>
 
             <div class="techs">
               <div>
@@ -191,23 +198,54 @@
 
               <div>
                 <i class="fab fa-bootstrap h4"></i>
-                <h5 class="black bold">Bootstrap 3</h5>
-              </div>
-
-              <div>
-                <i class="fab fa-bootstrap h4"></i>
-                <h5 class="black bold">PHP</h5>
+                <h5 class="black bold">Bootstrap 4</h5>
               </div>
             </div>
 
-            <div class="link">
-              <p class="spaced black bold">ACESSAR O SITE</p>
-              <i class="fas fa-external-link-alt"></i>
-            </div>
+            <a target="_blank" href="http://marketplacedecalçados.com.br"
+              ><div class="link">
+                <p class="spaced black bold">ACESSAR O SITE</p>
+                <i class="fas fa-external-link-alt"></i></div
+            ></a>
           </div>
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="container">
+        <h3 class="spaced black bold">CONTACT</h3>
+        <div class="d-flex justify-content-between flex-column flex-lg-row">
+          <div class="d-flex align-items-center">
+            <i class="h5 fa fa-envelope"></i>
+            <p class="black">gmantiqueira@gmail.com</p>
+          </div>
+
+          <div class="social-right d-flex flex-column flex-lg-row">
+            <a target="_blank" href="www.linkedin.com/in/g-mantiqueira"
+              ><div class="d-flex align-items-center">
+                <i class="h5 fab fa-linkedin"></i>
+                <p class="black">LinkedIn</p>
+              </div></a
+            >
+
+            <a target="_blank" href="https://github.com/Gmantiqueira/"
+              ><div class="d-flex align-items-center">
+                <i class="h5 fab fa-github"></i>
+                <p class="black">Github</p>
+              </div></a
+            >
+
+            <a target="_blank" href="tel:+55(14) 99862-5506"
+              ><div class="d-flex align-items-center">
+                <i class="h5 fab fa-whatsapp"></i>
+                <p class="black">WhatsApp</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
