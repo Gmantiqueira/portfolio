@@ -231,10 +231,12 @@ section.projeto {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin: 0 auto;
     margin-top: 48px;
     position: relative;
-    width: 256px;
+    width: 240px;
     transition: all 0.4s ease;
+
     &:hover {
       background-color: #22232b;
       transition: all 0.4s ease;
@@ -246,7 +248,14 @@ section.projeto {
     p {
       display: block;
       margin-bottom: 0;
-      padding: 16px 32px;
+      padding: 16px 24px;
+    }
+    @media screen and (min-width: 992px) {
+      margin: 48px 0 0;
+      width: 256px;
+      p {
+        padding: 16px 32px;
+      }
     }
 
     i {

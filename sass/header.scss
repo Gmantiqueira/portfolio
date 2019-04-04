@@ -15,6 +15,21 @@ header {
       border-bottom: 1px solid var(--black);
     }
   }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    transition: all 0.3s ease;
+    width: 100%;
+
+    a {
+      display: block;
+      margin-left: 0;
+      margin-right: 48px;
+      min-width: 36px;
+      z-index: 2;
+    }
+  }
   @media screen and (min-width: 992px) {
     align-items: center;
     flex-direction: row;
@@ -25,21 +40,6 @@ header {
         margin-left: 48px;
         margin-right: 0;
       }
-    }
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    text-align: right;
-    transition: all 0.3s ease;
-
-    a {
-      display: block;
-      margin-left: 0;
-      margin-right: 48px;
-      min-width: 36px;
-      z-index: 2;
     }
   }
 }

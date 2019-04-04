@@ -4233,6 +4233,23 @@ header {
     padding: 8px; }
     header a:hover {
       border-bottom: 1px solid var(--black); }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: right;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 100%; }
+    header nav a {
+      display: block;
+      margin-left: 0;
+      margin-right: 48px;
+      min-width: 36px;
+      z-index: 2; }
   @media screen and (min-width: 992px) {
     header {
       -webkit-box-align: center;
@@ -4249,22 +4266,6 @@ header {
       header nav a {
         margin-left: 48px;
         margin-right: 0; } }
-  header nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    text-align: right;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-    header nav a {
-      display: block;
-      margin-left: 0;
-      margin-right: 48px;
-      min-width: 36px;
-      z-index: 2; }
 
 section#home {
   padding: 64px 24px; }
@@ -4456,9 +4457,10 @@ section.projeto {
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin: 0 auto;
     margin-top: 48px;
     position: relative;
-    width: 256px;
+    width: 240px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease; }
     section.projeto .link:hover {
@@ -4471,7 +4473,13 @@ section.projeto {
     section.projeto .link p {
       display: block;
       margin-bottom: 0;
-      padding: 16px 32px; }
+      padding: 16px 24px; }
+    @media screen and (min-width: 992px) {
+      section.projeto .link {
+        margin: 48px 0 0;
+        width: 256px; }
+        section.projeto .link p {
+          padding: 16px 32px; } }
     section.projeto .link i {
       position: absolute;
       right: 24px;
