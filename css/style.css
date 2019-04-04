@@ -4227,7 +4227,12 @@ header {
   padding: 0 32px;
   width: 100%; }
   header a {
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    border-bottom: 1px solid transparent;
     padding: 8px; }
+    header a:hover {
+      border-bottom: 1px solid var(--black); }
   @media screen and (min-width: 992px) {
     header {
       -webkit-box-align: center;
@@ -4243,12 +4248,7 @@ header {
       height: 128px; }
       header nav a {
         margin-left: 48px;
-        margin-right: 0;
-        -webkit-transition: 0.3s all ease;
-        transition: 0.3s all ease;
-        border-bottom: 1px solid transparent; }
-        header nav a:hover {
-          border-bottom: 1px solid var(--black); } }
+        margin-right: 0; } }
   header nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4497,10 +4497,11 @@ footer {
     footer .social-right div {
       margin-top: 0;
       margin-left: 32px; } }
+  footer .item {
+    padding: 8px; }
   footer .link {
     border: 1px solid transparent;
     border-radius: 6px;
-    padding: 8px;
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease; }
     footer .link:hover {

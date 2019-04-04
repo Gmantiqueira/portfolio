@@ -284,10 +284,13 @@ footer {
     }
   }
 
+  .item {
+    padding: 8px;
+  }
+
   .link {
     border: 1px solid transparent;
     border-radius: 6px;
-    padding: 8px;
     transition: 0.3s all ease;
     &:hover {
       border: 1px solid var(--black);
