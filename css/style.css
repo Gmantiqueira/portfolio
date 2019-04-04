@@ -4263,9 +4263,11 @@ header {
           -ms-flex-pack: justify;
               justify-content: space-between;
       height: 128px; }
-      header nav a {
-        margin-left: 48px;
-        margin-right: 0; } }
+      header nav {
+        width: auto; }
+        header nav a {
+          margin-left: 48px;
+          margin-right: 0; } }
 
 section#home {
   padding: 64px 24px; }
