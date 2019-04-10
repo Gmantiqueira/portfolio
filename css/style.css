@@ -4230,7 +4230,7 @@ header {
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease;
     border-bottom: 1px solid transparent;
-    padding: 8px; }
+    padding: 8px 0px; }
     header a:hover {
       border-bottom: 1px solid var(--black); }
   header nav {
@@ -4262,7 +4262,8 @@ header {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      height: 128px; }
+      height: 128px;
+      padding: 0 !important; }
       header nav {
         width: auto; }
         header nav a {

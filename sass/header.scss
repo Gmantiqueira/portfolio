@@ -10,7 +10,7 @@ header {
   a {
     transition: 0.3s all ease;
     border-bottom: 1px solid transparent;
-    padding: 8px;
+    padding: 8px 0px;
     &:hover {
       border-bottom: 1px solid var(--black);
     }
@@ -35,6 +35,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     height: 128px;
+    padding: 0 !important;
     nav {
       width: auto;
       a {
