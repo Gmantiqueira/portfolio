@@ -4383,6 +4383,10 @@ section.projeto {
           background-image: url("../img/picplace.png"); }
         section.projeto .image .img-wrapper .inner-image.spotify {
           background-image: url("../img/spotify.png"); }
+        section.projeto .image .img-wrapper .inner-image.essenza {
+          background-image: url("../img/essenza.png"); }
+        section.projeto .image .img-wrapper .inner-image.in-time {
+          background-image: url("../img/in-time.png"); }
     section.projeto .image img {
       height: auto;
       position: absolute;
@@ -4461,7 +4465,7 @@ section.projeto {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin: 0 auto;
-    margin-top: 48px;
+    margin-top: 24px;
     position: relative;
     width: 240px;
     -webkit-transition: all 0.4s ease;

@@ -150,6 +150,12 @@ section.projeto {
         &.spotify {
           background-image: url("../img/spotify.png");
         }
+        &.essenza {
+          background-image: url("../img/essenza.png");
+        }
+        &.in-time {
+          background-image: url("../img/in-time.png");
+        }
       }
     }
     img {
@@ -232,7 +238,7 @@ section.projeto {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0 auto;
-    margin-top: 48px;
+    margin-top: 24px;
     position: relative;
     width: 240px;
     transition: all 0.4s ease;
