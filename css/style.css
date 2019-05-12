@@ -4413,6 +4413,11 @@ section.projeto {
     margin-bottom: 32px; }
   section.projeto h3 {
     margin-bottom: 48px; }
+    section.projeto h3 i {
+      font-style: italic;
+      font-weight: 300; }
+  section.projeto .btn-wrapper .link {
+    margin-top: 24px; }
   section.projeto .techs {
     display: -webkit-box;
     display: -ms-flexbox;
